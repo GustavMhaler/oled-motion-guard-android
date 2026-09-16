@@ -1,0 +1,2 @@
+com.shijia.oledmotionguard:style/AppTheme = 0x7f020000
+com.shijia.oledmotionguard:drawable/ic_launcher = 0x7f010000

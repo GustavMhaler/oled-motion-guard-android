@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.shijia.oledmotionguard"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:3:5-78
+11-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:3:22-75
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:4:5-77
+12-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:4:22-74
+13    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+13-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:5:5-77
+13-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:5:22-74
+14
+15    <application
+15-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:7:5-29:19
+16        android:allowBackup="false"
+16-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:8:9-36
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@drawable/ic_launcher"
+19-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:10:9-45
+20        android:label="OLED 动态保护"
+20-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:9:9-34
+21        android:supportsRtl="true"
+21-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:11:9-35
+22        android:theme="@style/AppTheme" >
+22-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:12:9-40
+23        <activity
+23-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:13:9-20:20
+24            android:name="com.shijia.oledmotionguard.MainActivity"
+24-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:14:13-41
+25            android:exported="true" >
+25-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:15:13-36
+26            <intent-filter>
+26-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:16:13-19:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:17:17-69
+27-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:18:17-77
+29-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:18:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <receiver
+33-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:22:9-24:40
+34            android:name="com.shijia.oledmotionguard.MotionAlarmReceiver"
+34-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:23:13-48
+35            android:exported="false" />
+35-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:24:13-37
+36
+37        <service
+37-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:26:9-28:40
+38            android:name="com.shijia.oledmotionguard.MotionOverlayService"
+38-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:27:13-49
+39            android:exported="false" />
+39-->/home/mint/oled-motion-guard-android/app/src/main/AndroidManifest.xml:28:13-37
+40    </application>
+41
+42</manifest>
